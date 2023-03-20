@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #003366;
+  color: #fff;
+  padding: 0.5rem;
+  }
+  
+  header img {
+  height: 150px;
+  margin: 0 1rem;
+  }
+  
+  header h1 {
+  font-size: 2rem;
+  margin-right: 1rem;
+  }
+  
+  main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .center {
+  text-align: center;
+  }
+  
+  #filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  }
+  
+  #filter label {
+  margin-right: 0.5rem;
+  }
+  
+  #filter input[type="text"],
+  #filter select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-right: 1rem;
+  }
+  
+  #filter select {
+  width: 150px;
+  }
+  
+  table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  }
+  
+  th,
+  td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  }
+  
+  th {
+  font-weight: bold;
+  }
+  
+  tbody tr:hover {
+  background-color: #f5f5f5;
+  }
+
+  @media (max-width: 480px) {
+    /* Further adjust font sizes and margins for even smaller screens */
+    body {
+      font-size: 12px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    table {
+      margin: 10px auto;
+      font-size: 10px;
+    }
+    th, td {
+      padding: 3px;
+    }
+  }
+
+  /* CSS Media Queries */
+@media (max-width: 768px) {
+  /* Adjust font sizes and margins for smaller screens */
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  table {
+    margin: 20px auto;
+    font-size: 12px;
+  }
+  th, td {
+    padding: 5px;
+  }
+}
+
+/* tablet and desktop styles */
+@media screen and (min-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
+
+}
+
+/* mobile first styles */
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.subheading {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-left h3,
+.footer-center h3,
+.footer-right h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-left p,
+.footer-center p,
+.footer-right p {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #333;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+.in img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: auto;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* Add animation to table rows */
+table tbody tr {
+  transition: all 0.2s ease-in-out;
+}
+
+table tbody tr:hover {
+  background-color: #F9D9CC;
+  transform: scale(1.02);
+}
+
+
+/* fade in animation */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+
+table tbody tr:hover {
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
