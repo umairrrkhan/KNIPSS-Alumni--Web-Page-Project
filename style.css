@@ -15,7 +15,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #003366;
+  background-image: url("233333.jpg");
+  animation: slide 10s infinite;
   color: #fff;
   padding: 0.5rem;
   }
@@ -316,6 +317,22 @@ table tbody tr:hover {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+/* animation for the header file */
+
+
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 
